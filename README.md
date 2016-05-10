@@ -15,6 +15,8 @@ Transmitter
 Receiver 
 - Raspberry (Zero, A/A+, B/B+, B2)
 - compatable wifi adaptor
+or
+- Android device? https://github.com/Consti10/myMediaCodecPlayer-for-FPV
 
 #Compatable wifi adaptors
 Currently anything AR9271 based
