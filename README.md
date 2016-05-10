@@ -4,7 +4,7 @@ This project allows durable low latency transmission of hd video using off the s
 
 All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
 
-This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker and since the main repository hasn't been updated in months, whats the harm?
+This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker.
 
 Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/
 
