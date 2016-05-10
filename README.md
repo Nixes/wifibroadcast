@@ -4,7 +4,7 @@ This project allows durable low latency transmission of hd video using off the s
 
 All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
 
-This is just the source code, usefull builds are found elsewhere.
+This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker and since the main repository hasn't been updated in months, whats the harm?
 
 #Hardware Requirements
 Transmitter
@@ -15,8 +15,12 @@ Transmitter
 Receiver 
 - Raspberry (Zero, A/A+, B/B+, B2)
 - compatable wifi adaptor
+
 or
+
 - Android device? https://github.com/Consti10/myMediaCodecPlayer-for-FPV
+- what wifi adaptors?
 
 #Compatable wifi adaptors
-Currently anything AR9271 based
+ - Currently anything AR9271 based
+ - [Alfa AWUS051NH](https://wikidevi.com/wiki/ALFA_Network_AWUS051NH)
