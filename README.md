@@ -11,9 +11,11 @@ Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-li
 Expected latency: 80-150ms, depending on video quality
 
 Break down of latency composition:
-- 55ms-75ms Image Acquisition + Frame Encode (h.264) 
-- 10ms Wifi + FEC
-- Decode?
+- 40ms Image Acquisition
+- 10ms Frame Encode (h.264) 
+- 10ms Wifi + FEC?
+- Decode (FEC-Encoding+Transmission+Reception+FEC-Decoding+Display: Remaining ~50-100ms (to be confirmed))?
+
 
 #Hardware Requirements
 Transmitter
