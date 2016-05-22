@@ -35,4 +35,4 @@ or
 #Compatable wifi adaptors
  - Currently anything AR9271 based with patches
  - [Alfa AWUS051NH](https://wikidevi.com/wiki/ALFA_Network_AWUS051NH)
- - Anything RT5572 without patches
+ - Anything [RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
