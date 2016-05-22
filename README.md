@@ -8,6 +8,9 @@ This is just the source code along with some random notes gathered from forums, 
 
 Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/
 
+Expected latency: 80-150ms, depending on video quality
+
+
 #Hardware Requirements
 Transmitter
 - Raspberry Pi (A/A+, B/B+, B2)
