@@ -33,6 +33,7 @@ or
 - what wifi adaptors?
 
 #Compatable wifi adaptors
- - Currently anything AR9271 based with patches
+Currently anything AR9271 based with patches:
  - [Alfa AWUS051NH](https://wikidevi.com/wiki/ALFA_Network_AWUS051NH)
- - Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
+
+Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
