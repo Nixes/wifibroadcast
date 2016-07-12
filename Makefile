@@ -1,6 +1,6 @@
 
 LDFLAGS=-lrt -lpcap
-CPPFLAGS=-Wall
+CPPFLAGS=-Wall -O2
 
 all: rx tx rx_status_test
 
@@ -23,4 +23,3 @@ rx_status_test: rx_status_test.o
 
 clean:
 	rm -f rx tx *~ *.o
-
