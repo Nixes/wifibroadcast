@@ -32,10 +32,12 @@ Receiver
 - Raspberry (Zero, A/A+, B/B+, B2)
 - compatable wifi adaptor
 
-or
+or (even better)
 
-- Android device? https://github.com/Consti10/myMediaCodecPlayer-for-FPV
 - Any linux device with enough compute to software decode h264 or mjpeg in mplayer or ffplay
+- A wifi adaptor that supports monitor mode fast enough
+
+[potentially android?](https://github.com/Consti10/myMediaCodecPlayer-for-FPV)
 
 #Compatable wifi adaptors
 Currently anything AR9271 based with patches:
