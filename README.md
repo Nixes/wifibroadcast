@@ -2,6 +2,9 @@
 An unofficial github mirror of the project of the same name, from https://bitbucket.org/befi/wifibroadcast on 01/06/2016.
 This project allows durable low latency transmission of hd video using off the shelf hardware.
 
+
+##[Dev Log](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
+
 All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
 
 This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker.
