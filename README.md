@@ -24,7 +24,7 @@ Break down of latency composition:
 
 #Hardware Requirements
 Transmitter
-- Raspberry Pi (A/A+, B/B+, B2)
+- Raspberry Pi (Zero 1.3, A/A+, B/B+, B2)
 - Raspberry Camera
 - compatable wifi adaptor
 
