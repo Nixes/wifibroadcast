@@ -48,5 +48,5 @@ Currently anything AR9271 based with patches:
 Feel free to try whatever you have and file an issue if you find something that works but is not listed.
 
 #Compatable rx wifi adaptors:
+
 Adaptors that have been tested to run in monitor mode at the bitrates required, but have not been tested as transmitters:
-- 
