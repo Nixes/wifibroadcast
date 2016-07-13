@@ -11,6 +11,8 @@ This is just the source code along with some random notes gathered from forums, 
 
 Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/
 
+Lowest actually (repeatably) obtained by me: 128ms 
+
 Expected latency: 80-150ms, depending on video quality
 
 Break down of latency composition:
