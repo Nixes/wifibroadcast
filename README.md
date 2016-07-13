@@ -35,7 +35,7 @@ Receiver
 or
 
 - Android device? https://github.com/Consti10/myMediaCodecPlayer-for-FPV
-- what wifi adaptors?
+- Any linux device with enough compute to software decode h264 or mjpeg in mplayer or ffplay
 
 #Compatable wifi adaptors
 Currently anything AR9271 based with patches:
