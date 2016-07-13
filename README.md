@@ -3,7 +3,7 @@ An unofficial github mirror of the project of the same name, from https://bitbuc
 This project allows durable low latency transmission of hd video using off the shelf hardware.
 
 
-##[Dev Log](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
+##[Experimental Log](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
 All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
 
