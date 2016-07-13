@@ -39,8 +39,14 @@ or (even better)
 
 [potentially android?](https://github.com/Consti10/myMediaCodecPlayer-for-FPV)
 
-#Compatable wifi adaptors
+#Compatable (tx/rx) wifi adaptors
+Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
+
 Currently anything AR9271 based with patches:
  - [Alfa AWUS051NH](https://wikidevi.com/wiki/ALFA_Network_AWUS051NH)
 
-Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
+Feel free to try whatever you have and file an issue if you find something that works but is not listed.
+
+#Compatable rx wifi adaptors:
+Adaptors that have been tested to run in monitor mode at the bitrates required, but have not been tested as transmitters:
+- 
