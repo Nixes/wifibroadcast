@@ -18,4 +18,4 @@ fi
 ifconfig $rx_radio_interface up
 iwconfig $rx_radio_interface channel $radio_channel
 
-iwconfig $rx_radio_interface rate 54M
+iwconfig $rx_radio_interface rate $radio_rate

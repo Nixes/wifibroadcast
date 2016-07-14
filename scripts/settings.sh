@@ -11,6 +11,8 @@ tx_radio_interface="wlan0"
 # this makes sure settings are the same between tx and rx
 radio_channel="14"
 
+radio_rate="24M"
+
 # these are the command line arguments to be used for ./tx and ./rx
 fec_settings="-b 8 -r 16 -f 1024"
 
