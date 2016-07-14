@@ -9,8 +9,7 @@ ifconfig $rx_radio_interface down
 iw dev $rx_radio_interface set monitor otherbss fcsfail
 
 # required for using channel 14
-if [ $radio_channel == 14 ]
-then
+if [ "$radio_channel" == "14" ]; then
   iw reg set JP
 fi
 

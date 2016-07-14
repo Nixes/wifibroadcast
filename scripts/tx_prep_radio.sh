@@ -11,8 +11,7 @@ iw dev $tx_radio_interface set monitor otherbss fcsfail
 iw reg set BO # required for more tx power
 
 # required for using channel 14
-if [ $radio_channel == 14 ]
-then
+if [ "$radio_channel" == "14" ]; then
   iw reg set JP
 fi
 
