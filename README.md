@@ -4,6 +4,28 @@ An unofficial github fork of the project of the same name, from https://bitbucke
 This project allows durable low latency transmission of hd video using off the shelf hardware.
 
 
+#Usage
+download and compile with
+```
+apt-get install git libpcap-dev iw
+git clone https://github.com/Nixes/wifibroadcast.git
+cd wifibroadcast
+make
+```
+run using scripts in /scripts folder
+
+eg if you want h264 run on the transmitter
+```
+sudo ./tx_h264.sh
+```
+and on the receiver
+```
+sudo ./rx_h264_mplayer.sh
+```
+
+settings including wifi device names are modified in settings.sh
+
+
 ##[Experimental Log](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
 All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
