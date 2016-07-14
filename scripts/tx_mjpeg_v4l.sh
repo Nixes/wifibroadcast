@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # run radio prep script
 . ./tx_prep_radio.sh
 

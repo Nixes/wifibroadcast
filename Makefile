@@ -1,4 +1,3 @@
-
 LDFLAGS=-lrt -lpcap -O2
 CPPFLAGS=-Wall -O2
 

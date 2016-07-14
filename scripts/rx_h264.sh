@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # this dot space notation works like an include
 . ./rx_prep_radio.sh
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 . ./settings.sh
 
 # stop management of interface

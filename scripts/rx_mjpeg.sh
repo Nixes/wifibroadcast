@@ -1,3 +1,5 @@
+#!/bin/bash
+
 . ./rx_prep_radio.sh
 
 # need a smaller amount of fec packets to make space for the higher min bandwidth requirements, used autovideosink

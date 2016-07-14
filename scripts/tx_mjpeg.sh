@@ -1,3 +1,5 @@
+#!/bin/bash
+
 . ./tx_prep_radio.sh
 
 # bitrate should be over 10000000 to get something reasonable
