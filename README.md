@@ -13,7 +13,7 @@ Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-li
 
 Lowest actually (repeatably) obtained by me: 128ms 
 
-Expected latency: 80-150ms, depending on video quality
+Expected latency: 110-150ms, depending on video quality
 
 Break down of latency composition:
 - 40ms Image Acquisition (buffering 2 frames?)
