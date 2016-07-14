@@ -1,5 +1,5 @@
 
-LDFLAGS=-lrt -lpcap
+LDFLAGS=-lrt -lpcap -O2
 CPPFLAGS=-Wall -O2
 
 all: rx tx rx_status_test
