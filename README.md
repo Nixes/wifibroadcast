@@ -1,5 +1,6 @@
 # wifibroadcast
 An unofficial github fork of the project of the same name, from https://bitbucket.org/befi/wifibroadcast on 01/06/2016.
+
 This project allows durable low latency transmission of hd video using off the shelf hardware.
 
 
@@ -36,10 +37,12 @@ or (even better)
 
 - Any linux device with enough compute to software decode h264 or mjpeg in mplayer or ffplay
 - A wifi adaptor that supports monitor mode fast enough
+- Multiple compatible wifi adaptors to use for diversity reception
 
 [potentially android?](https://github.com/Consti10/myMediaCodecPlayer-for-FPV)
 
 #Compatable (tx/rx) wifi adaptors
+
 Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
 
 Currently anything AR9271 based with patches:
