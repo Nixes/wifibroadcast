@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # multiple interfaces may be listed here to enable diversity
 rx_radio_interface="wlx7cdd907ebe01"
 
