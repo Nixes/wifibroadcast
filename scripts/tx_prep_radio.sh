@@ -15,7 +15,7 @@ if [ "$radio_channel" == "14" ]; then
   iw reg set JP
 fi
 
-#iwconfig $tx_radio_interface txpower 20
+iwconfig $tx_radio_interface txpower 20
 
 
 ifconfig $tx_radio_interface up
