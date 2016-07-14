@@ -4,6 +4,8 @@
 
 # multiple interfaces may be listed here to enable diversity
 rx_radio_interface="wlx7cdd907ebe01"
+# if you have another radio, add it here
+rx_radio2_interface=""
 
 # only one interface may be listed here
 tx_radio_interface="wlan0"

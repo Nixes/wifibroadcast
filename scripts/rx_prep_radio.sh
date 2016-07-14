@@ -19,3 +19,14 @@ ifconfig $rx_radio_interface up
 iwconfig $rx_radio_interface channel $radio_channel
 
 iwconfig $rx_radio_interface rate $radio_rate
+
+# if there is a second radio specified, then prepare this other radio too
+if ["$rx_radio2_interface" != "" ]; then
+  ifconfig $rx_radio2_interface down
+  iw dev $rx_radio2_interface set monitor otherbss fcsfail
+
+  ifconfig $rx_radio2_interface up
+  iwconfig $rx_radio2_interface channel $radio_channel
+
+  iwconfig $rx_radio2_interface rate $radio_rate
+fi
