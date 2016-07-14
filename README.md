@@ -18,8 +18,8 @@ Expected latency: 80-150ms, depending on video quality
 Break down of latency composition:
 - 40ms Image Acquisition (buffering 2 frames?)
 - 10ms Frame Encode (h.264) 
-- 10ms Wifi + FEC?
-- Decode (FEC-Encoding+Transmission+Reception+FEC-Decoding+Display: Remaining ~50-100ms (to be confirmed))?
+- 10ms Wifi + FEC
+- Reception+FEC-Decoding+Display: Remaining ~50-100ms 
 
 
 #Hardware Requirements
