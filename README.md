@@ -1,6 +1,7 @@
 #Other resources
 - [An OSD for wifibroadcast](https://github.com/SamuelBrucksch/wifibroadcast_osd)
 - [Additional patches to improve wifibroadcast](https://github.com/bortek/EZ-WifiBroadcast)
+- [Misc WifiBroadcast Utilities](https://github.com/skullkey/wbc-utils)
 
 
 # wifibroadcast
