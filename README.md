@@ -1,3 +1,8 @@
+#Other resources
+- [An OSD for wifibroadcast](https://github.com/SamuelBrucksch/wifibroadcast_osd)
+- [Additional patches to improve wifibroadcast](https://github.com/bortek/EZ-WifiBroadcast)
+
+
 # wifibroadcast
 An unofficial github fork of the project of the same name, from https://bitbucket.org/befi/wifibroadcast on 01/06/2016.
 
