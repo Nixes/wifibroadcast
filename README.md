@@ -48,6 +48,8 @@ Break down of latency composition:
 - 10ms Wifi + FEC
 - Reception+FEC-Decoding+Display: Remaining ~50-100ms 
 
+For comparison even some nice analog fpv cameras that use the Sony Effio chip have similar latencies. Except this is HD and has much better quality!
+
 #[Experimental Log (including latency measurements)](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
 #Hardware Requirements
