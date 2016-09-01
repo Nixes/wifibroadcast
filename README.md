@@ -1,3 +1,8 @@
+#Intro
+This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker.
+
+Original setup instructions [found here](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/)
+
 #Other resources
 - [An OSD for wifibroadcast](https://github.com/SamuelBrucksch/wifibroadcast_osd)
 - [Additional patches to improve wifibroadcast](https://github.com/bortek/EZ-WifiBroadcast)
@@ -30,14 +35,6 @@ sudo ./rx_h264_mplayer.sh
 ```
 
 settings including wifi device names are modified in settings.sh
-
-
-
-
-
-This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker.
-
-Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/
 
 
 #Latency
