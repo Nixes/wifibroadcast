@@ -32,14 +32,15 @@ sudo ./rx_h264_mplayer.sh
 settings including wifi device names are modified in settings.sh
 
 
-##[Experimental Log](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
-All this is possible due to the amazing work of [befinitiv](https://befinitiv.wordpress.com/)
+
 
 This is just the source code along with some random notes gathered from forums, usefull builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of githubs issue tracker.
 
 Setup instructions here: https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/
 
+
+#Latency
 Lowest actually (repeatably) obtained by me: 128ms 
 
 Expected latency: 110-150ms, depending on video quality
@@ -50,6 +51,7 @@ Break down of latency composition:
 - 10ms Wifi + FEC
 - Reception+FEC-Decoding+Display: Remaining ~50-100ms 
 
+#[Experimental Log (including latency measurements)](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
 #Hardware Requirements
 Transmitter
