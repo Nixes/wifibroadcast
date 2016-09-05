@@ -1,6 +1,8 @@
 #Introduction
 This project allows durable low latency transmission of HD video using off the shelf hardware.
 
+A good explanation of the how and why is available from the original author befinitiv [here](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/)
+
 This repository is just the source code along with some random notes gathered from forums, useful builds are found elsewhere. This repository was created to make a centralised source of documentation in the form of the wiki, and to allow use of GitHub’s issue tracker.
 
 Forked from [bitbucket](https://bitbucket.org/befi/wifibroadcast) on 01/06/2016.
