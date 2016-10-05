@@ -70,14 +70,6 @@ or (even better)
 [potentially android?](https://github.com/Consti10/myMediaCodecPlayer-for-FPV)
 
 #Compatible (tx/rx) Wi-Fi adaptors
+Are found in [this list](https://github.com/Nixes/wifibroadcast/wiki/Wifi-Hardware) on the wiki
 
-Anything [Ralink RT5572](https://wikidevi.com/wiki/Ralink_RT5572) without patches
-
-Currently anything AR9271 based with patches:
- - [Alfa AWUS051NH](https://wikidevi.com/wiki/ALFA_Network_AWUS051NH)
-
-Feel free to try whatever you have and file an issue if you find something that works but is not listed.
-
-#Compatible receiving Wi-Fi adaptors:
-
-Listed are adaptors that have been tested to run in monitor mode at the bitrates required, but have not been tested as transmitters:
+Note this wiki is publicly editable, feel free to add your own experiences with wifi dongles here.
