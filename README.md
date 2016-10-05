@@ -39,14 +39,6 @@ settings including Wi-Fi device names are modified in settings.sh
 #Latency
 Lowest actually (repeatably) obtained by me: 128ms 
 
-Expected latency: 110-150ms, depending on video quality
-
-Break down of latency composition:
-- 40ms Image Acquisition (buffering 2 frames?)
-- 10ms Frame Encode (h.264) 
-- 10ms Wi-Fi + FEC
-- Reception + FEC Decoding + Display: Remaining ~50-100ms 
-
 For comparison even some nice analog FPV cameras that use the Sony Effio chip have similar latencies. Except this is HD and has much better quality!
 
 #[Experimental Log (including latency measurements)](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
