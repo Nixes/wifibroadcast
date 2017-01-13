@@ -69,9 +69,7 @@ int flagHelp = 0;
 
 
 
-void
-usage(void)
-{
+void usage(void) {
 	printf(
 	    "(c)2015 befinitiv. Based on packetspammer by Andy Green.  Licensed under GPL2\n"
 	    "\n"
@@ -268,9 +266,7 @@ void pb_transmit_block(packet_buffer_t *pbl, pcap_t *ppcap, int *seq_nr, int por
 }
 
 
-int
-main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	char szErrbuf[PCAP_ERRBUF_SIZE];
 	int i;
 	pcap_t *ppcap = NULL;
