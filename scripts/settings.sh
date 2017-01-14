@@ -3,7 +3,7 @@
 # note, spacing in the variable declaration syntax is important, follow to the letter
 
 # multiple interfaces may be listed here to enable diversity
-rx_radio_interface="wlx7cdd907ebe01"
+rx_radio_interface="wlp3s0"
 # if you have another radio, add it here
 rx_radio2_interface=""
 
@@ -11,7 +11,7 @@ rx_radio2_interface=""
 tx_radio_interface="wlan0"
 
 # this makes sure settings are the same between tx and rx
-radio_channel="14"
+radio_channel="13"
 
 radio_rate="24M"
 
