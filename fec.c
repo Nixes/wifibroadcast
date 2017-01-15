@@ -245,20 +245,21 @@ static void generate_gf(void) {
    	*/
   	mask = 1 << (GF_BITS - 1 ) ;
   	for (i = GF_BITS + 1; i < GF_SIZE; i++) {
-			if (gf_exp[i - 1] >= mask)
+			if (gf_exp[i - 1] >= mask) {
 		    	gf_exp[i] = gf_exp[GF_BITS] ^ ((gf_exp[i - 1] ^ mask) << 1);
-					else
+			} else {
 		    	gf_exp[i] = gf_exp[i - 1] << 1;
-					gf_log[gf_exp[i]] = i;
-  		}
+			}
+			gf_log[gf_exp[i]] = i;
+  	}
   	/*
    	* log(0) is not defined, so use a special value
    	*/
     gf_log[0] =	GF_SIZE;
     /* set the extended gf_exp values for fast multiply */
-    for (i = 0 ; i < GF_SIZE ; i++)
-			gf_exp[i + GF_SIZE] = gf_exp[i] ;
-
+    for (i = 0 ; i < GF_SIZE ; i++) {
+			gf_exp[i + GF_SIZE] = gf_exp[i];
+		}
     /*
      * again special cases. 0 has no inverse. This used to
      * be initialized to GF_SIZE, but it should make no difference
@@ -266,8 +267,9 @@ static void generate_gf(void) {
      */
     inverse[0] = 0;
     inverse[1] = 1;
-    for (i=2; i<=GF_SIZE; i++)
+    for (i=2; i<=GF_SIZE; i++) {
 			inverse[i] = gf_exp[GF_SIZE-gf_log[i]];
+		}
 }
 
 /*
@@ -300,31 +302,32 @@ static void slow_addmul1(gf *dst1, gf *src1, gf c, int sz) {
 
 #if (UNROLL > 1) /* unrolling by 8/16 is quite effective on the pentium */
     for (; dst < lim ; dst += UNROLL, src += UNROLL ) {
-	GF_ADDMULC( dst[0] , src[0] );
-	GF_ADDMULC( dst[1] , src[1] );
-	GF_ADDMULC( dst[2] , src[2] );
-	GF_ADDMULC( dst[3] , src[3] );
-#if (UNROLL > 4)
-	GF_ADDMULC( dst[4] , src[4] );
-	GF_ADDMULC( dst[5] , src[5] );
-	GF_ADDMULC( dst[6] , src[6] );
-	GF_ADDMULC( dst[7] , src[7] );
-#endif
-#if (UNROLL > 8)
-	GF_ADDMULC( dst[8] , src[8] );
-	GF_ADDMULC( dst[9] , src[9] );
-	GF_ADDMULC( dst[10] , src[10] );
-	GF_ADDMULC( dst[11] , src[11] );
-	GF_ADDMULC( dst[12] , src[12] );
-	GF_ADDMULC( dst[13] , src[13] );
-	GF_ADDMULC( dst[14] , src[14] );
-	GF_ADDMULC( dst[15] , src[15] );
-#endif
+			GF_ADDMULC( dst[0] , src[0] );
+			GF_ADDMULC( dst[1] , src[1] );
+			GF_ADDMULC( dst[2] , src[2] );
+			GF_ADDMULC( dst[3] , src[3] );
+		#if (UNROLL > 4)
+			GF_ADDMULC( dst[4] , src[4] );
+			GF_ADDMULC( dst[5] , src[5] );
+			GF_ADDMULC( dst[6] , src[6] );
+			GF_ADDMULC( dst[7] , src[7] );
+		#endif
+		#if (UNROLL > 8)
+			GF_ADDMULC( dst[8] , src[8] );
+			GF_ADDMULC( dst[9] , src[9] );
+			GF_ADDMULC( dst[10] , src[10] );
+			GF_ADDMULC( dst[11] , src[11] );
+			GF_ADDMULC( dst[12] , src[12] );
+			GF_ADDMULC( dst[13] , src[13] );
+			GF_ADDMULC( dst[14] , src[14] );
+			GF_ADDMULC( dst[15] , src[15] );
+		#endif
     }
 #endif
     lim += UNROLL - 1;
-    for (; dst < lim; dst++, src++ )		/* final components */
-	GF_ADDMULC( *dst , *src );
+    for (; dst < lim; dst++, src++ ) {		/* final components */
+			GF_ADDMULC( *dst , *src );
+		}
 }
 
 #if defined i386 && defined USE_ASSEMBLER
@@ -422,31 +425,31 @@ static void slow_mul1(gf *dst1, gf *src1, gf c, int sz) {
 
 #if (UNROLL > 1) /* unrolling by 8/16 is quite effective on the pentium */
     for (; dst < lim ; dst += UNROLL, src += UNROLL ) {
-	GF_MULC( dst[0] , src[0] );
-	GF_MULC( dst[1] , src[1] );
-	GF_MULC( dst[2] , src[2] );
-	GF_MULC( dst[3] , src[3] );
-#if (UNROLL > 4)
-	GF_MULC( dst[4] , src[4] );
-	GF_MULC( dst[5] , src[5] );
-	GF_MULC( dst[6] , src[6] );
-	GF_MULC( dst[7] , src[7] );
-#endif
-#if (UNROLL > 8)
-	GF_MULC( dst[8] , src[8] );
-	GF_MULC( dst[9] , src[9] );
-	GF_MULC( dst[10] , src[10] );
-	GF_MULC( dst[11] , src[11] );
-	GF_MULC( dst[12] , src[12] );
-	GF_MULC( dst[13] , src[13] );
-	GF_MULC( dst[14] , src[14] );
-	GF_MULC( dst[15] , src[15] );
-#endif
+			GF_MULC( dst[0] , src[0] );
+			GF_MULC( dst[1] , src[1] );
+			GF_MULC( dst[2] , src[2] );
+			GF_MULC( dst[3] , src[3] );
+		#if (UNROLL > 4)
+			GF_MULC( dst[4] , src[4] );
+			GF_MULC( dst[5] , src[5] );
+			GF_MULC( dst[6] , src[6] );
+			GF_MULC( dst[7] , src[7] );
+		#endif
+		#if (UNROLL > 8)
+			GF_MULC( dst[8] , src[8] );
+			GF_MULC( dst[9] , src[9] );
+			GF_MULC( dst[10] , src[10] );
+			GF_MULC( dst[11] , src[11] );
+			GF_MULC( dst[12] , src[12] );
+			GF_MULC( dst[13] , src[13] );
+			GF_MULC( dst[14] , src[14] );
+			GF_MULC( dst[15] , src[15] );
+		#endif
     }
 #endif
     lim += UNROLL - 1;
     for (; dst < lim; dst++, src++)		/* final components */
-	GF_MULC( *dst , *src );
+			GF_MULC( *dst , *src );
 }
 
 #if defined i386 && defined USE_ASSEMBLER
@@ -564,7 +567,7 @@ static int invert_mat(gf *src, int k) {
 			for (row = 0; row < k; row++) {
 			    if (ipiv[row] != 1) {
 						for (ix = 0 ; ix < k ; ix++) {
-						    DEB( pivloops++ ; )
+						  DEB(pivloops++;)
 							if (ipiv[ix] == 0) {
 							  if (src[row*k + ix] != 0) {
 									irow = row;
@@ -885,12 +888,14 @@ static inline void resolve(int blockSize,
 			int col;
 			fprintf(stderr,"Pivot not found\n");
 			fprintf(stderr, "Rows: ");
-			for(row=0; row<nr_fec_blocks; row++)
+			for(row=0; row<nr_fec_blocks; row++) {
 			    fprintf(stderr, "%d ", 128 + fec_block_nos[row]);
+			}
 			fprintf(stderr, "\n");
 			fprintf(stderr, "Columns: ");
-			for(col = 0; col < nr_fec_blocks; col++, ptr++)
+			for(col = 0; col < nr_fec_blocks; col++, ptr++) {
 			    fprintf(stderr, "%d ", erased_blocks[col]);
+			}
 			fprintf(stderr, "\n");
 			assert(0);
     }
