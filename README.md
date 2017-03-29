@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 This project allows durable low latency transmission of HD video using off the shelf hardware.
 
 A good explanation of the how and why is available from the original author befinitiv [here](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/)
@@ -9,12 +9,12 @@ Forked from [bitbucket](https://bitbucket.org/befi/wifibroadcast) on 01/06/2016.
 
 Original setup instructions [found here](https://befinitiv.wordpress.com/wifibroadcast-analog-like-transmission-of-live-video-data/wifibroadcast-fpv-manual-setup/)
 
-#Other resources from around github
+# Other resources from around github
 - [An OSD for wifibroadcast](https://github.com/SamuelBrucksch/wifibroadcast_osd)
 - [Additional patches to improve wifibroadcast](https://github.com/bortek/EZ-WifiBroadcast)
 - [Misc WifiBroadcast Utilities](https://github.com/skullkey/wbc-utils)
 
-#Usage
+# Usage
 download and compile with
 ```
 apt-get install git libpcap-dev iw
@@ -36,14 +36,14 @@ sudo ./rx_h264_mplayer.sh
 settings including Wi-Fi device names are modified in settings.sh
 
 
-#Latency
+# Latency
 Lowest actually (repeatably) obtained by me: 128ms 
 
 For comparison even some nice analog FPV cameras that use the Sony Effio chip have similar latencies. Except this is HD and has much better quality!
 
-#[Experimental Log (including latency measurements)](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
+# [Experimental Log (including latency measurements)](https://gist.github.com/Nixes/053745dbbfb602f376d4f3015b15511a)
 
-#Hardware Requirements
+# Hardware Requirements
 Transmitter
 - Raspberry Pi (Zero 1.3, A/A+, B/B+, B2)
 - Raspberry Camera
@@ -61,7 +61,7 @@ or (even better)
 
 [potentially android?](https://github.com/Consti10/myMediaCodecPlayer-for-FPV)
 
-#Compatible (tx/rx) Wi-Fi adaptors
+# Compatible (tx/rx) Wi-Fi adaptors
 Are found in [this list](https://github.com/Nixes/wifibroadcast/wiki/Wifi-Hardware) on the wiki
 
 Note this wiki is publicly editable, feel free to add your own experiences with wifi dongles here.
